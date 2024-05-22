@@ -17,7 +17,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+               'gradient-start': '#FF8938',
+               'gradient-end': '#F00',
               }
             }
           }
@@ -31,19 +32,19 @@
 </head>
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero min-h-screen">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-20">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
             <div>
                 <h1 class="text-7xl font-extrabold">It's good <br>
                     tea time at The 
                     <br>Tea House</h1>
-                <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <p class="py-6 lg:w-[513px]">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More <img src="images/Frame.svg" alt=""></button>
               </div>
               <div>
-                <img src="images/banner.png" class="max-w-sm rounded-lg" />
+                <img src="images/banner.png" class="" />
                 <!-- ratings -->
-                <div class="-mt-16 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 rounded-xl">
+                <div class="-mt-32 ml-20 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60 rounded-xl">
                     <img src="images/star.svg" alt="">
                     <div>
                         <h3 class="text-3xl font-extrabold">5.00</h3>
@@ -98,7 +99,7 @@
          <!-- great tea -->
         <section class="my-24 flex flex-col lg:flex-row gap-12">
           <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 flex-1">
-            <div class="rounded-xl h-36 bg-gradient-to-r from-[#ff0000] to-[#FF8938] opacity-10"></div>
+            <div class="rounded-xl h-36 bg-gradient-to-r from-gradient-start to-gradient-end opacity-10"></div>
             <div class="row-span-2 bg-[#E6A6231A] flex justify-center items-center px-8 py-12">
                <img src="images/fresh-1.png" alt="">
             </div>
@@ -121,13 +122,13 @@
 
         </section>
         <!-- clients -->
-        <section class="my-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#FF0000] px-16 py-24 flex flex-col lg:flex-row gap-12">
+        <section class="my-24 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24 flex flex-col lg:flex-row gap-12">
           <div class="flex items-center lg:pr-28">
            <div class="space-y-5">
             <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br>
               Clients</h2>
               <p class="text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-              <button class="btn btn-primary">Show All</button>
+              <button class="btn text-[#FF0000]">Show All</button>
            </div>
           </div> 
           <!-- review container -->
@@ -171,10 +172,38 @@
         <!-- News section -->
          <section class="text-center">
           <h2 class="text-5xl font-extrabold mb-5">News & Events</h2>
-          <p class="font-medium lg:max-w-3xl mx-auto mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-          <div class="card w-96 bg-base-100 shadow-xl">
+          <p class="font-medium lg:max-w-3xl mx-auto mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+           <!-- first -->
+          <div class="card w-96 bg-base-100 shadow-xl border-[#D2D2D2] border">
             <figure class="px-10 pt-10">
               <img src="images/news-1.png" alt="news" class="rounded-xl" />
+            </figure>
+            <div class="card-body text-start">
+              <p class="font-medium">July 18, 2024</p>
+              <h2 class="card-title font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
+              <p class="font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+              <h4 class="font-bold">Learn More</h4>
+               
+              </div>
+            </div>
+          <!-- second -->
+          <div class="card w-96 bg-base-100 shadow-xl border-[#D2D2D2] border">
+            <figure class="px-10 pt-10">
+              <img src="images/news-2.png" alt="news" class="rounded-xl" />
+            </figure>
+            <div class="card-body text-start">
+              <p class="font-medium">July 18, 2024</p>
+              <h2 class="card-title font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
+              <p class="font-medium">There are many variations of passages of Lorem Ipsum available.</p>
+              <h4 class="font-bold">Learn More</h4>
+               
+              </div>
+            </div>
+          <!-- third -->
+          <div class="card w-96 bg-base-100 shadow-xl border-[#D2D2D2] border">
+            <figure class="px-10 pt-10">
+              <img src="images/news-3.png" alt="news" class="rounded-xl" />
             </figure>
             <div class="card-body text-start">
               <p class="font-medium">July 18, 2024</p>
@@ -187,8 +216,47 @@
           </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="mt-24 px-48 py-10 bg-base-200 text-base-content bg-gradient-to-r from-[#FF89381A] to-[#FF00001A]">
+      <div class="flex justify-between my-12">
+        <img src="images/cup.png" alt="">
+        <p class="space-x-5">
+          <span>Ready to get started?</span>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+        </p>
+      </div>
+     <div class="footer">
+      <nav class="w-24">
+        <h6 class="text-base font-semibold">Quick Links</h6> 
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Insurance</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </nav> 
+      <nav class="w-[111px]">
+        <h6 class="text-base font-semibold">Our Service</h6> 
+        <a class="link link-hover">Life Insurance</a>
+        <a class="link link-hover">Car Insurance</a>
+        <a class="link link-hover">Health Insurance</a>
+        <a class="link link-hover">House Insurance</a>
+      </nav> 
+      <nav class="w-[84px]">
+        <h6 class="text-base font-semibold">Help</h6> 
+        <a class="link link-hover">FAQs</a>
+        <a class="link link-hover">Contact Us</a>
+      </nav> 
+      <form>
+        <h6 class="text-2xl font-semibold">Subscribe to our <br> Newsletter</h6> 
+        <fieldset class="form-control w-80">
+          <div class="join">
+            <input type="text" placeholder="username@site.com" class="bg-transparent border-b-2 border-black outline-none" /> 
+            <button class="btn rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><img src="images/button.svg" alt=""></button>
+          </div>
+        </fieldset>
+      </form>
+     </div>
+       <div class="mt-10 text-center">
+        <p>© 2027 UIDesign.to - All rights reserved.</p>
+       </div>
     </footer>
 </body>
 </html>
